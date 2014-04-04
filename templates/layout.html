@@ -23,6 +23,8 @@
     <script type=text/javascript> var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }}; </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/static/js/bootstrap.js"></script>
+    {% block login %}
+    {% endblock %}
     {% block body %}
     {% endblock %}
   </body>
